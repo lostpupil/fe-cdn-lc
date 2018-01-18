@@ -66,3 +66,15 @@ Read the gulpfile and webpack config file if you want to make some improvements.
 4. Get the asset url in front end.
 
 ![Screenshot](images/WX20180118-115426@2x.png?raw=true "Screenshot")
+
+Acturally, you can manage the resources in a convenient way, You can rollback the front end resource by delete the newest record, or create a record manually, the front end will use that for the latest update.
+
+You just need to create a schema like this or whatever you want.
+
+```txt
+application
+digest
+stage
+file
+```
+
