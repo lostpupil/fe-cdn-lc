@@ -17,10 +17,6 @@ gulp.task('default', () => {
     console.log('hey I am banana')
 });
 
-gulp.task('rehash', () => {
-    var key = crypto.MD5(`${Number(new Date())}`).toString();
-});
-
 gulp.task('dev', () => {
     return gulp.src('src/index.js')
         .pipe(webpack(require('./webpack.dev.config.js')))
